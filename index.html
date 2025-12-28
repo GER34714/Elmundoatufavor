@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#ffffff" />
 
   <title>El Mundo a Tu Favor® | Catálogo</title>
-  <meta name="description" content="Catálogo simple de artesanías mágicas: duendes, hadas y sahumerios. Consultas por WhatsApp. Envíos a todo el país." />
+  <meta name="description" content="Catálogo simple de artesanías mágicas: duendes, hadas, pepones y sahumerios. Consultas por WhatsApp. Envíos a todo el país." />
 
   <style>
     :root{
@@ -18,7 +18,6 @@
       --muted:#5b6475;
       --bg:#ffffff;
       --paper:#f6f7fb;
-      --line: rgba(16,19,24,.10);
 
       --radius:18px;
       --shadow: 0 16px 40px rgba(16,19,24,.10);
@@ -63,6 +62,7 @@
       display:flex;
       flex-direction:column;
       line-height:1.1;
+      min-width: 200px;
     }
     .brand b{ font-size:15px; }
     .brand span{ font-size:12.5px; color:var(--muted); }
@@ -90,6 +90,7 @@
       transition:.18s ease;
       user-select:none;
       white-space:nowrap;
+      -webkit-tap-highlight-color: transparent;
     }
     .btn:hover{ transform: translateY(-1px); }
 
@@ -132,6 +133,7 @@
       margin:0 0 8px;
       font-size: clamp(24px, 3.8vw, 36px);
       letter-spacing:-.6px;
+      line-height:1.05;
     }
     .sub{
       margin:0;
@@ -149,6 +151,7 @@
       justify-content:space-between;
       gap:12px;
       margin-bottom:12px;
+      flex-wrap:wrap;
     }
     .sectionHead h2{
       margin:0;
@@ -180,10 +183,11 @@
       min-height:100%;
     }
     .thumb{
-      height: 170px;
+      height: 210px;
       border-bottom:1px solid rgba(16,19,24,.08);
       position:relative;
       overflow:hidden;
+      background: rgba(246,247,251,.9);
     }
     .thumb img{
       width:100%;
@@ -197,10 +201,22 @@
       gap:8px;
       flex:1 1 auto;
     }
+    .tag{
+      display:inline-flex;
+      width: fit-content;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(246,247,251,.92);
+      font-size:12px;
+      font-weight:1000;
+      color: rgba(16,19,24,.78);
+    }
     .body h3{
       margin:0;
       font-size:15px;
       letter-spacing:-.2px;
+      line-height:1.2;
     }
     .body .mini{
       margin:0;
@@ -216,13 +232,14 @@
       width:100%;
       border:none;
       border-radius:14px;
-      padding:11px 12px;
+      padding:12px 12px;
       font-weight:1000;
       cursor:pointer;
       background: linear-gradient(90deg, rgba(39,183,255,.96), rgba(255,42,166,.88), rgba(255,210,61,.92));
       color:#0d1117;
       box-shadow: var(--shadow2);
       transition:.18s ease;
+      -webkit-tap-highlight-color: transparent;
     }
     .btnFull:hover{ transform: translateY(-1px); }
 
@@ -258,16 +275,25 @@
       transition:.18s ease;
       user-select:none;
       white-space:nowrap;
+      -webkit-tap-highlight-color: transparent;
     }
     .waFloat:hover{ transform: translateY(-2px); }
 
     @media (max-width: 900px){
       .card{ grid-column: span 6; }
+      .heroImg{ height: 220px; }
+      .thumb{ height: 220px; }
     }
     @media (max-width: 560px){
       .card{ grid-column: span 12; }
-      .heroImg{ height: 210px; }
-      .waFloat{ right:12px; bottom:12px; }
+      .heroImg{ height: 200px; }
+      .heroBody{ padding:14px; }
+      .btn{ padding:10px 12px; font-size:13px; }
+      .btnFull{ padding:12px 12px; }
+      .waFloat{ right:12px; bottom:12px; padding:12px 13px; }
+      .brand b{ font-size:14.5px; }
+      .brand span{ font-size:12px; }
+      .thumb{ height: 240px; }
     }
   </style>
 </head>
@@ -307,7 +333,7 @@
         <div class="heroCard">
           <div class="heroImg" aria-hidden="true"></div>
           <div class="heroBody">
-            <h1>Duendes, hadas y sahumerios artesanales</h1>
+            <h1>Artesanías mágicas hechas a mano</h1>
             <p class="sub">Elegí del catálogo y consultá por WhatsApp. Venta virtual y envíos a todo el país.</p>
           </div>
         </div>
@@ -317,86 +343,96 @@
         <div class="sectionHead">
           <div>
             <h2>Catálogo</h2>
-            <p>Ejemplos (después se cargan las fotos reales y precios si quieren).</p>
+            <p>Ejemplos cargados (después sumamos más productos y, si quieren, precios).</p>
           </div>
         </div>
 
         <div class="grid">
+          <!-- HADAS -->
           <article class="card">
             <div class="thumb">
-              <img src="https://images.unsplash.com/photo-1563298723-dcfebaa392e3?auto=format&fit=crop&w=1200&q=70" alt="Duende artesanal (demo)" />
+              <img src="https://iili.io/fVZTviN.md.jpg" alt="Hada artesanal (El Mundo a Tu Favor)" />
             </div>
             <div class="body">
-              <h3>Duende “Bosque”</h3>
-              <p class="mini">Hecho a mano. Ideal para deco o regalo.</p>
+              <span class="tag">Hadas</span>
+              <h3>Hada artesanal “Guardiana”</h3>
+              <p class="mini">Pieza hecha a mano con detalles finos. Ideal para regalar y decorar espacios con buena energía.</p>
             </div>
             <div class="footer">
-              <button class="btnFull" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por: Duende “Bosque”. ¿Me pasás disponibilidad y colores?')">Consultar por WhatsApp</button>
+              <button class="btnFull" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por: Hada artesanal “Guardiana”. ¿Me pasás disponibilidad y medidas?')">Consultar por WhatsApp</button>
             </div>
           </article>
 
           <article class="card">
             <div class="thumb">
-              <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=70" alt="Hada artesanal (demo)" />
+              <img src="https://iili.io/fVZTSfI.md.jpg" alt="Hada artesanal (El Mundo a Tu Favor)" />
             </div>
             <div class="body">
-              <h3>Hada “Luz”</h3>
-              <p class="mini">Detalles finos. Se puede personalizar.</p>
+              <span class="tag">Hadas</span>
+              <h3>Hada artesanal “Dulce”</h3>
+              <p class="mini">Hecha a mano, con colores armoniosos. Se puede consultar por personalización según disponibilidad.</p>
             </div>
             <div class="footer">
-              <button class="btnFull" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por: Hada “Luz”. ¿Qué opciones de colores hay?')">Consultar por WhatsApp</button>
+              <button class="btnFull" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por: Hada artesanal “Dulce”. ¿Qué colores hay disponibles?')">Consultar por WhatsApp</button>
+            </div>
+          </article>
+
+          <!-- DUENDE DE LA ABUNDANCIA -->
+          <article class="card">
+            <div class="thumb">
+              <img src="https://iili.io/fVZAU9n.md.jpg" alt="Duende de la abundancia (El Mundo a Tu Favor)" />
+            </div>
+            <div class="body">
+              <span class="tag">Duendes de la abundancia</span>
+              <h3>Duende de la Abundancia</h3>
+              <p class="mini">Artesanía con intención para atraer prosperidad y buena energía. Ideal para negocios, hogar o regalos.</p>
+            </div>
+            <div class="footer">
+              <button class="btnFull" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por: Duende de la Abundancia. ¿Me pasás medidas, precio y stock?')">Consultar por WhatsApp</button>
+            </div>
+          </article>
+
+          <!-- PEPONES -->
+          <article class="card">
+            <div class="thumb">
+              <img src="https://iili.io/fVZlzVs.md.jpg" alt="Pepón artesanal (El Mundo a Tu Favor)" />
+            </div>
+            <div class="body">
+              <span class="tag">Pepones</span>
+              <h3>Pepón artesanal “Jardín”</h3>
+              <p class="mini">Hecho a mano, perfecto para decorar rincones, estantes o macetas. Súper simpático y llamativo.</p>
+            </div>
+            <div class="footer">
+              <button class="btnFull" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por: Pepón artesanal “Jardín”. ¿Me pasás medidas y disponibilidad?')">Consultar por WhatsApp</button>
             </div>
           </article>
 
           <article class="card">
             <div class="thumb">
-              <img src="https://images.unsplash.com/photo-1542556398-95fb5b9f8a50?auto=format&fit=crop&w=1200&q=70" alt="Sahumerios (demo)" />
+              <img src="https://iili.io/fVZlIiG.md.jpg" alt="Pepón artesanal (El Mundo a Tu Favor)" />
             </div>
             <div class="body">
+              <span class="tag">Pepones</span>
+              <h3>Pepón artesanal “Protector”</h3>
+              <p class="mini">Artesanía única para entradas o espacios especiales. Consultá por variantes y colores disponibles.</p>
+            </div>
+            <div class="footer">
+              <button class="btnFull" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por: Pepón artesanal “Protector”. ¿Qué opciones tenés disponibles?')">Consultar por WhatsApp</button>
+            </div>
+          </article>
+
+          <!-- SAHUMERIOS (placeholder para completar el catálogo) -->
+          <article class="card">
+            <div class="thumb">
+              <img src="https://images.unsplash.com/photo-1542556398-95fb5b9f8a50?auto=format&fit=crop&w=1200&q=70" alt="Sahumerios artesanales (demo)" />
+            </div>
+            <div class="body">
+              <span class="tag">Sahumerios</span>
               <h3>Sahumerios artesanales</h3>
-              <p class="mini">Aromas con intención para armonizar.</p>
+              <p class="mini">Aromas con intención para armonizar el hogar. Consultá aromas disponibles y combos.</p>
             </div>
             <div class="footer">
-              <button class="btnFull" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por Sahumerios artesanales. ¿Qué aromas tenés disponibles?')">Consultar por WhatsApp</button>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="thumb">
-              <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1200&q=70" alt="Combo aromático (demo)" />
-            </div>
-            <div class="body">
-              <h3>Combo “Armonía”</h3>
-              <p class="mini">Mix de aromas para elegir.</p>
-            </div>
-            <div class="footer">
-              <button class="btnFull" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por Combo “Armonía”. ¿Qué incluye?')">Consultar por WhatsApp</button>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="thumb">
-              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=70" alt="Deco (demo)" />
-            </div>
-            <div class="body">
-              <h3>Deco personalizada</h3>
-              <p class="mini">Detalles para el hogar o regalos.</p>
-            </div>
-            <div class="footer">
-              <button class="btnFull" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por Deco personalizada. ¿Qué opciones hacés?')">Consultar por WhatsApp</button>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="thumb">
-              <img src="https://images.unsplash.com/photo-1519710887722-0d56f2e3f12b?auto=format&fit=crop&w=1200&q=70" alt="Artesanías (demo)" />
-            </div>
-            <div class="body">
-              <h3>Duende “Protector”</h3>
-              <p class="mini">Pieza artesanal, ideal para regalar.</p>
-            </div>
-            <div class="footer">
-              <button class="btnFull" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por Duende “Protector”. ¿Tenés stock o se hace a pedido?')">Consultar por WhatsApp</button>
+              <button class="btnFull" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por Sahumerios artesanales. ¿Qué aromas tenés disponibles y cuánto sale el envío?')">Consultar por WhatsApp</button>
             </div>
           </article>
         </div>
