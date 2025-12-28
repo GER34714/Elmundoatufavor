@@ -112,17 +112,16 @@
       overflow:hidden;
     }
 
-    /* HERO: imagen limpia, sin “nube”, mostrada completa */
+    /* HERO: imagen limpia, sin overlay */
     .heroImg{
       height: 300px;
       background-color: #ffffff;
       background-image: url("https://iili.io/fVZ8ssf.md.jpg");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: contain; /* muestra la imagen completa */
+      background-size: contain;
       position:relative;
     }
-    /* Se elimina overlay que nublaba la imagen */
     .heroImg:after{ content:none; }
 
     .heroBody{
@@ -424,15 +423,15 @@
             </div>
           </article>
 
-          <!-- SAHUMERIOS (placeholder para completar el catálogo) -->
+          <!-- SAHUMERIOS (imagen real solicitada) -->
           <article class="card">
             <div class="thumb">
-              <img src="https://images.unsplash.com/photo-1542556398-95fb5b9f8a50?auto=format&fit=crop&w=1200&q=70" alt="Sahumerios artesanales (demo)" />
+              <img src="https://iili.io/fVtngP1.md.jpg" alt="Sahumerios artesanales (El Mundo a Tu Favor)" />
             </div>
             <div class="body">
               <span class="tag">Sahumerios</span>
               <h3>Sahumerios artesanales</h3>
-              <p class="mini">Aromas con intención para armonizar el hogar. Consultá aromas disponibles y combos.</p>
+              <p class="mini">Aromas con intención para armonizar el hogar. Consultá aromas disponibles, combos y envíos.</p>
             </div>
             <div class="footer">
               <button class="btnFull" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por Sahumerios artesanales. ¿Qué aromas tenés disponibles y cuánto sale el envío?')">Consultar por WhatsApp</button>
