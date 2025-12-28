@@ -5,31 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#ffffff" />
 
-  <title>El Mundo a Tu Favor® | Artesanías mágicas (duendes, hadas, sahumerios)</title>
-  <meta name="description" content="Artesanías hechas en familia: duendes, hadas, sahumerios y utilitarios con intención. Venta virtual y envíos a todo el país por Correo Argentino." />
+  <title>El Mundo a Tu Favor® | Duendes, Hadas & Sahumerios</title>
+  <meta name="description" content="Artesanías mágicas hechas a mano: duendes, hadas, sahumerios y deco. Venta virtual y envíos a todo el país. Consultas por WhatsApp." />
 
-  <!-- OG (demo) -->
+  <!-- OG demo -->
   <meta property="og:title" content="El Mundo a Tu Favor® | Artesanías mágicas" />
-  <meta property="og:description" content="Duendes, hadas, sahumerios y utilitarios con intención. Venta virtual • Envíos por Correo Argentino." />
+  <meta property="og:description" content="Duendes, hadas, sahumerios y deco. Venta virtual • Envíos a todo el país • Consultas por WhatsApp." />
   <meta property="og:type" content="website" />
 
   <style>
     :root{
-      --cian:#2bb8ff;
-      --magenta:#ff2da6;
-      --amarillo:#ffd042;
+      --cian:#27B7FF;
+      --magenta:#FF2AA6;
+      --amarillo:#FFD23D;
 
+      --ink:#111318;
+      --muted:#5b6475;
       --bg:#ffffff;
       --paper:#f6f7fb;
-      --ink:#111318;
-      --muted:#5a6373;
-
-      --card:#ffffff;
-      --line:rgba(17,19,24,.12);
 
       --radius:18px;
-      --shadow: 0 12px 30px rgba(17,19,24,.10);
-      --shadow2: 0 10px 22px rgba(17,19,24,.08);
+      --shadow: 0 16px 40px rgba(16,19,24,.10);
+      --shadow2: 0 10px 22px rgba(16,19,24,.08);
+      --line: rgba(16,19,24,.10);
       --max: 1120px;
     }
 
@@ -37,27 +35,60 @@
     html{ scroll-behavior:smooth; }
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
       color:var(--ink);
       background:
-        radial-gradient(1200px 800px at 10% -10%, rgba(43,184,255,.18), transparent 55%),
-        radial-gradient(900px 650px at 110% 20%, rgba(255,45,166,.14), transparent 60%),
-        radial-gradient(700px 500px at 30% 110%, rgba(255,208,66,.16), transparent 60%),
-        linear-gradient(180deg, #ffffff 0%, #fbfbfe 55%, #ffffff 100%);
+        radial-gradient(1200px 700px at 12% -10%, rgba(39,183,255,.20), transparent 56%),
+        radial-gradient(900px 600px at 110% 10%, rgba(255,42,166,.16), transparent 56%),
+        radial-gradient(850px 520px at 35% 115%, rgba(255,210,61,.16), transparent 62%),
+        linear-gradient(180deg, #ffffff 0%, #fbfbfe 60%, #ffffff 100%);
       overflow-x:hidden;
     }
-
     a{ color:inherit; text-decoration:none; }
+    img{ max-width:100%; display:block; }
     .wrap{ max-width:var(--max); margin:0 auto; padding:0 18px; }
 
-    /* Topbar */
+    /* Top gradient strip */
+    .topStrip{
+      background: linear-gradient(90deg, rgba(39,183,255,.95), rgba(255,42,166,.86), rgba(255,210,61,.92));
+      color:#0d1117;
+      font-weight:900;
+      font-size:13px;
+    }
+    .topStrip .wrap{
+      padding:9px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .topStrip small{
+      font-weight:800;
+      opacity:.9;
+    }
+    .topStrip .miniLinks{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .topStrip .miniLinks a{
+      background: rgba(255,255,255,.22);
+      border: 1px solid rgba(13,17,23,.12);
+      padding:6px 10px;
+      border-radius:999px;
+      font-weight:1000;
+    }
+
+    /* Header */
     header{
       position:sticky;
       top:0;
       z-index:50;
-      background:rgba(255,255,255,.78);
+      background: rgba(255,255,255,.84);
       backdrop-filter: blur(14px);
-      border-bottom:1px solid rgba(17,19,24,.08);
+      border-bottom:1px solid rgba(16,19,24,.08);
     }
     .topbar{
       display:flex;
@@ -66,55 +97,37 @@
       gap:14px;
       padding:12px 0;
     }
-
     .brand{
       display:flex;
       align-items:center;
       gap:12px;
-      min-width:220px;
+      min-width: 240px;
     }
-
-    .logoBadge{
-      width:44px; height:44px;
-      border-radius:14px;
+    .logoBox{
+      width:46px;height:46px;border-radius:16px;
+      border:1px solid rgba(16,19,24,.10);
       background:
-        radial-gradient(18px 18px at 28% 30%, rgba(43,184,255,.35), transparent 60%),
-        radial-gradient(22px 22px at 70% 30%, rgba(255,45,166,.28), transparent 65%),
-        radial-gradient(26px 26px at 45% 78%, rgba(255,208,66,.30), transparent 65%),
+        radial-gradient(18px 18px at 30% 30%, rgba(39,183,255,.42), transparent 62%),
+        radial-gradient(22px 22px at 72% 30%, rgba(255,42,166,.32), transparent 66%),
+        radial-gradient(26px 26px at 45% 80%, rgba(255,210,61,.36), transparent 66%),
         linear-gradient(135deg, rgba(255,255,255,1), rgba(246,247,251,1));
-      border:1px solid rgba(17,19,24,.10);
-      box-shadow: 0 10px 22px rgba(17,19,24,.08);
+      box-shadow: var(--shadow2);
       position:relative;
       overflow:hidden;
       flex:0 0 auto;
     }
-    .logoBadge:before{
+    .logoBox:before{
       content:"";
       position:absolute;
-      inset:-20%;
-      background:
-        linear-gradient(90deg,
-          rgba(43,184,255,.0) 0%,
-          rgba(43,184,255,.26) 22%,
-          rgba(255,45,166,.20) 52%,
-          rgba(255,208,66,.22) 78%,
-          rgba(255,208,66,.0) 100%);
+      inset:-30%;
+      background: linear-gradient(90deg, rgba(39,183,255,.0), rgba(39,183,255,.28), rgba(255,42,166,.22), rgba(255,210,61,.24), rgba(255,210,61,.0));
       transform: rotate(-18deg);
-      opacity:.7;
+      opacity:.78;
+      pointer-events:none;
     }
-    .brandText{
-      display:flex;
-      flex-direction:column;
-      line-height:1.1;
-    }
-    .brandText b{
-      font-size:14.5px;
-      letter-spacing:.2px;
-    }
-    .brandText span{
-      font-size:12.5px;
-      color:var(--muted);
-    }
+    .brandText{ display:flex; flex-direction:column; line-height:1.1; }
+    .brandText b{ font-size:14.8px; letter-spacing:.2px; }
+    .brandText span{ font-size:12.5px; color:var(--muted); }
 
     nav{
       display:flex;
@@ -125,7 +138,7 @@
     }
     .navLink{
       font-size:13px;
-      color:rgba(17,19,24,.78);
+      color: rgba(16,19,24,.78);
       padding:8px 10px;
       border-radius:999px;
       border:1px solid transparent;
@@ -133,129 +146,124 @@
       white-space:nowrap;
     }
     .navLink:hover{
-      border-color:rgba(17,19,24,.10);
-      background:rgba(246,247,251,.85);
+      border-color: rgba(16,19,24,.10);
+      background: rgba(246,247,251,.92);
     }
-
+    .iconBtn{
+      width:40px;height:40px;border-radius:999px;
+      display:grid;place-items:center;
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow2);
+      transition:.18s ease;
+      cursor:pointer;
+    }
+    .iconBtn:hover{ transform: translateY(-1px); }
+    .icon{
+      width:18px;height:18px;
+      fill:none;
+      stroke: rgba(16,19,24,.86);
+      stroke-width:2;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+    }
     .pill{
       display:inline-flex;
       align-items:center;
       gap:8px;
       padding:9px 12px;
       border-radius:999px;
-      border:1px solid rgba(17,19,24,.10);
-      background:rgba(255,255,255,.9);
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(255,255,255,.92);
       box-shadow: var(--shadow2);
       font-size:13px;
+      font-weight:1000;
       transition:.18s ease;
       white-space:nowrap;
     }
     .pill:hover{ transform: translateY(-1px); }
-
-    .pill .dot{
+    .dot{
       width:10px;height:10px;border-radius:999px;
       background: linear-gradient(90deg, var(--cian), var(--magenta), var(--amarillo));
-      box-shadow: 0 0 0 4px rgba(43,184,255,.10);
+      box-shadow: 0 0 0 4px rgba(39,183,255,.10);
     }
 
-    .iconBtn{
-      width:40px; height:40px;
-      border-radius:999px;
-      display:inline-grid;
-      place-items:center;
-      border:1px solid rgba(17,19,24,.10);
-      background:rgba(255,255,255,.92);
-      box-shadow: var(--shadow2);
-      transition:.18s ease;
-    }
-    .iconBtn:hover{ transform: translateY(-1px); }
-
-    .icon{
-      width:18px;height:18px;
-      fill:none;
-      stroke:rgba(17,19,24,.86);
-      stroke-width:2;
-      stroke-linecap:round;
-      stroke-linejoin:round;
-    }
-
-    /* Hero */
-    .hero{
-      padding:34px 0 16px;
-      position:relative;
-    }
+    /* Hero (ya con imagen visible) */
+    .hero{ padding:22px 0 10px; }
     .heroGrid{
       display:grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap:22px;
+      grid-template-columns: 1.05fr .95fr;
+      gap:16px;
       align-items:stretch;
     }
 
-    .heroCard{
-      border-radius: calc(var(--radius) + 6px);
-      background:
-        linear-gradient(135deg, rgba(255,255,255,.92), rgba(246,247,251,.92));
-      border:1px solid rgba(17,19,24,.10);
+    .heroMain{
+      border-radius: calc(var(--radius) + 10px);
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(255,255,255,.92);
       box-shadow: var(--shadow);
-      padding:22px;
-      position:relative;
       overflow:hidden;
+      position:relative;
+      display:grid;
+      grid-template-columns: 1fr;
     }
 
-    .heroCard:before{
+    .heroCover{
+      position:relative;
+      height: 290px;
+      background:
+        linear-gradient(90deg, rgba(39,183,255,.14), rgba(255,42,166,.10), rgba(255,210,61,.12)),
+        url("https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1600&q=70") center/cover no-repeat;
+    }
+    .heroCover:after{
       content:"";
       position:absolute;
-      inset:-40%;
-      background:
-        radial-gradient(closest-side, rgba(43,184,255,.22), transparent 60%),
-        radial-gradient(closest-side, rgba(255,45,166,.16), transparent 62%),
-        radial-gradient(closest-side, rgba(255,208,66,.16), transparent 62%);
-      transform: rotate(12deg);
-      opacity:.9;
-      pointer-events:none;
+      inset:0;
+      background: linear-gradient(180deg, rgba(17,19,24,.15), rgba(255,255,255,.92) 78%);
     }
-    .heroCard > *{ position:relative; z-index:1; }
+
+    .heroContent{
+      padding:18px 18px 18px;
+      margin-top: -24px;
+      position:relative;
+      z-index:1;
+    }
 
     .kicker{
       display:inline-flex;
       align-items:center;
       gap:10px;
-      font-size:13px;
-      color:rgba(17,19,24,.78);
       padding:8px 12px;
       border-radius:999px;
-      border:1px dashed rgba(17,19,24,.16);
-      background:rgba(255,255,255,.65);
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow2);
+      font-size:13px;
+      color: rgba(16,19,24,.78);
       width:fit-content;
+      font-weight:900;
     }
-    .kicker .spark{
+    .spark{
       width:10px;height:10px;border-radius:3px;
       background: linear-gradient(135deg, var(--cian), var(--magenta), var(--amarillo));
-      transform: rotate(12deg);
+      transform: rotate(10deg);
     }
 
     h1{
-      margin:14px 0 10px;
-      font-size: clamp(28px, 4vw, 44px);
+      margin:12px 0 10px;
+      font-size: clamp(30px, 4vw, 46px);
       line-height:1.05;
-      letter-spacing:-.6px;
+      letter-spacing:-.7px;
     }
     .sub{
-      margin:0 0 16px;
+      margin:0 0 14px;
       font-size:15.5px;
-      color:rgba(17,19,24,.74);
+      color: rgba(16,19,24,.74);
       line-height:1.45;
-      max-width: 52ch;
+      max-width: 66ch;
     }
 
-    .ctaRow{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      align-items:center;
-      margin-top:14px;
-    }
-
+    .ctaRow{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
     .btn{
       display:inline-flex;
       align-items:center;
@@ -263,111 +271,123 @@
       gap:10px;
       padding:12px 14px;
       border-radius:14px;
-      border:1px solid rgba(17,19,24,.10);
-      background:rgba(255,255,255,.92);
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(255,255,255,.94);
       box-shadow: var(--shadow2);
-      font-weight:700;
+      font-weight:1000;
       font-size:14px;
       cursor:pointer;
       transition:.18s ease;
       user-select:none;
     }
     .btn:hover{ transform: translateY(-1px); }
-
     .btnPrimary{
       border:none;
-      color:#0c1016;
-      background:
-        linear-gradient(90deg, rgba(43,184,255,.95), rgba(255,45,166,.88), rgba(255,208,66,.90));
-      box-shadow: 0 12px 26px rgba(17,19,24,.14);
+      color:#0d1117;
+      background: linear-gradient(90deg, rgba(39,183,255,.96), rgba(255,42,166,.88), rgba(255,210,61,.92));
+      box-shadow: 0 14px 30px rgba(16,19,24,.14);
     }
-
     .miniNote{
-      font-size:13px;
-      color:rgba(17,19,24,.70);
-      display:flex;
-      align-items:center;
-      gap:8px;
       margin-top:10px;
+      font-size:13px;
+      color: rgba(16,19,24,.70);
     }
-    .miniNote a{
-      text-decoration:underline;
-      text-underline-offset: 3px;
-    }
+    .miniNote a{ text-decoration:underline; text-underline-offset:3px; font-weight:1000; }
 
-    .heroAside{
-      border-radius: calc(var(--radius) + 6px);
-      border:1px solid rgba(17,19,24,.10);
-      background:rgba(255,255,255,.86);
+    /* Right side: gallery + trust */
+    .heroSide{
+      border-radius: calc(var(--radius) + 10px);
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(255,255,255,.92);
       box-shadow: var(--shadow);
-      padding:18px;
-      position:relative;
+      padding:16px;
       overflow:hidden;
     }
-    .heroAside:before{
-      content:"";
-      position:absolute;
-      inset:-20%;
-      background:
-        radial-gradient(closest-side, rgba(255,208,66,.20), transparent 62%),
-        radial-gradient(closest-side, rgba(43,184,255,.18), transparent 62%),
-        radial-gradient(closest-side, rgba(255,45,166,.12), transparent 62%);
-      transform: rotate(-10deg);
-      opacity:.9;
-    }
-    .heroAside > *{ position:relative; z-index:1; }
-
-    .asideTitle{
+    .sideTitle{
       margin:0 0 10px;
-      font-size:14px;
-      color:rgba(17,19,24,.74);
-      font-weight:800;
-      letter-spacing:.3px;
+      font-size:13.5px;
+      font-weight:1100;
+      letter-spacing:.4px;
       text-transform:uppercase;
+      color: rgba(16,19,24,.72);
     }
 
-    .featureList{
+    .mosaic{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:10px;
+      margin-bottom:12px;
+    }
+    .mosaic .big{
+      border-radius: 16px;
+      overflow:hidden;
+      border:1px solid rgba(16,19,24,.10);
+      height: 210px;
+      background:
+        linear-gradient(90deg, rgba(39,183,255,.10), rgba(255,42,166,.06), rgba(255,210,61,.08)),
+        url("https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=70") center/cover no-repeat;
+    }
+    .mosaic .smallCol{
+      display:grid;
+      grid-template-rows: 1fr 1fr;
+      gap:10px;
+    }
+    .mosaic .small{
+      border-radius: 16px;
+      overflow:hidden;
+      border:1px solid rgba(16,19,24,.10);
+      background-size:cover;
+      background-position:center;
+    }
+    .mosaic .s1{
+      background-image:
+        linear-gradient(90deg, rgba(39,183,255,.10), rgba(255,42,166,.06), rgba(255,210,61,.08)),
+        url("https://images.unsplash.com/photo-1542556398-95fb5b9f8a50?auto=format&fit=crop&w=900&q=70");
+    }
+    .mosaic .s2{
+      background-image:
+        linear-gradient(90deg, rgba(39,183,255,.10), rgba(255,42,166,.06), rgba(255,210,61,.08)),
+        url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=70");
+    }
+
+    .trust{
       display:grid;
       gap:10px;
       margin:0;
       padding:0;
       list-style:none;
     }
-    .feature{
+    .trustItem{
       display:flex;
       gap:12px;
       align-items:flex-start;
       padding:12px;
       border-radius:16px;
-      border:1px solid rgba(17,19,24,.10);
-      background:rgba(246,247,251,.75);
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(246,247,251,.82);
     }
     .badge{
-      width:38px;height:38px;
-      border-radius:14px;
-      display:grid;
-      place-items:center;
-      border:1px solid rgba(17,19,24,.10);
-      background:rgba(255,255,255,.88);
-      box-shadow: 0 10px 18px rgba(17,19,24,.08);
-      flex:0 0 auto;
-      position:relative;
-      overflow:hidden;
+      width:38px;height:38px;border-radius:14px;
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow2);
+      display:grid; place-items:center;
+      position:relative; overflow:hidden; flex:0 0 auto;
     }
     .badge:before{
       content:"";
       position:absolute;
-      inset:-40%;
-      background: linear-gradient(90deg, rgba(43,184,255,.22), rgba(255,45,166,.18), rgba(255,208,66,.20));
-      transform: rotate(22deg);
+      inset:-45%;
+      background: linear-gradient(90deg, rgba(39,183,255,.22), rgba(255,42,166,.18), rgba(255,210,61,.20));
+      transform: rotate(18deg);
+      opacity:.9;
     }
     .badge svg{ position:relative; z-index:1; }
-
-    .feature b{ display:block; font-size:13.8px; margin-bottom:2px; }
-    .feature span{ display:block; font-size:13px; color:rgba(17,19,24,.70); line-height:1.35; }
+    .trustItem b{ display:block; font-size:14px; margin-bottom:2px; }
+    .trustItem span{ display:block; font-size:13px; color: rgba(16,19,24,.70); line-height:1.35; }
 
     /* Sections */
-    section{ padding:28px 0; }
+    section{ padding:24px 0; }
     .sectionHead{
       display:flex;
       align-items:flex-end;
@@ -375,39 +395,47 @@
       gap:14px;
       margin-bottom:14px;
     }
-    .sectionHead h2{
-      margin:0;
-      font-size:22px;
-      letter-spacing:-.2px;
-    }
-    .sectionHead p{
-      margin:0;
-      color:rgba(17,19,24,.70);
-      font-size:13.5px;
-      max-width:56ch;
-      line-height:1.35;
-    }
+    .sectionHead h2{ margin:0; font-size:22px; letter-spacing:-.2px; }
+    .sectionHead p{ margin:0; font-size:13.5px; color: rgba(16,19,24,.70); max-width:66ch; line-height:1.35; }
 
+    /* Catalog cards with real images */
     .grid{
       display:grid;
       grid-template-columns: repeat(12, 1fr);
       gap:14px;
     }
-
     .card{
       grid-column: span 4;
       border-radius: var(--radius);
-      border:1px solid rgba(17,19,24,.10);
-      background: rgba(255,255,255,.92);
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(255,255,255,.94);
       box-shadow: var(--shadow2);
       overflow:hidden;
       display:flex;
       flex-direction:column;
-      min-height: 100%;
+      min-height:100%;
     }
-
+    .thumbImg{
+      height: 190px;
+      border-bottom:1px solid rgba(16,19,24,.08);
+      position:relative;
+      overflow:hidden;
+    }
+    .thumbImg img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transform: scale(1.02);
+    }
+    .thumbImg:after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: linear-gradient(180deg, rgba(17,19,24,.05), rgba(17,19,24,.00) 45%, rgba(17,19,24,.18));
+      pointer-events:none;
+    }
     .cardTop{
-      padding:14px 14px 0;
+      padding:12px 14px 0;
       display:flex;
       align-items:flex-start;
       justify-content:space-between;
@@ -417,93 +445,44 @@
       font-size:12px;
       padding:6px 10px;
       border-radius:999px;
-      border:1px solid rgba(17,19,24,.10);
-      background:rgba(246,247,251,.9);
-      color:rgba(17,19,24,.74);
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(246,247,251,.92);
+      color: rgba(16,19,24,.74);
       white-space:nowrap;
-    }
-    .price{
       font-weight:900;
-      font-size:12.8px;
+    }
+    .flag{
+      font-weight:1100;
+      font-size:12.5px;
       padding:6px 10px;
       border-radius:999px;
-      background: rgba(255,208,66,.28);
-      border:1px solid rgba(255,208,66,.55);
-      color: rgba(17,19,24,.86);
+      border:1px solid rgba(255,210,61,.60);
+      background: rgba(255,210,61,.26);
+      color: rgba(16,19,24,.86);
       white-space:nowrap;
     }
+    .cardBody{ padding:12px 14px 14px; display:flex; flex-direction:column; gap:10px; flex:1 1 auto; }
+    .cardBody h3{ margin:0; font-size:16px; letter-spacing:-.2px; }
+    .desc{ margin:0; font-size:13.5px; color: rgba(16,19,24,.72); line-height:1.4; }
 
-    .thumb{
-      margin:12px 14px 0;
-      border-radius: 16px;
-      border:1px solid rgba(17,19,24,.10);
-      background:
-        radial-gradient(180px 120px at 20% 20%, rgba(43,184,255,.18), transparent 60%),
-        radial-gradient(200px 140px at 70% 20%, rgba(255,45,166,.14), transparent 60%),
-        radial-gradient(200px 140px at 45% 90%, rgba(255,208,66,.16), transparent 60%),
-        linear-gradient(180deg, rgba(246,247,251,1), rgba(255,255,255,1));
-      height: 170px;
-      display:grid;
-      place-items:center;
-      position:relative;
-      overflow:hidden;
-    }
-    .thumb .ph{
-      width: 62px; height: 62px;
-      border-radius: 22px;
-      background: rgba(255,255,255,.9);
-      border: 1px solid rgba(17,19,24,.10);
-      box-shadow: 0 16px 30px rgba(17,19,24,.10);
-      display:grid;
-      place-items:center;
-      position:relative;
-    }
-    .thumb .ph:before{
-      content:"";
-      position:absolute;
-      inset:-40%;
-      background: linear-gradient(90deg, rgba(43,184,255,.22), rgba(255,45,166,.18), rgba(255,208,66,.20));
-      transform: rotate(-18deg);
-    }
-    .thumb .ph svg{ position:relative; z-index:1; }
-
-    .cardBody{
-      padding:14px;
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-      flex:1 1 auto;
-    }
-    .cardBody h3{
-      margin:0;
-      font-size:16px;
-      letter-spacing:-.2px;
-    }
-    .desc{
-      margin:0;
-      font-size:13.5px;
-      color:rgba(17,19,24,.72);
-      line-height:1.4;
-    }
-    .meta{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top:auto;
-    }
+    .meta{ display:flex; flex-wrap:wrap; gap:8px; margin-top:auto; }
     .chip{
       font-size:12px;
-      color:rgba(17,19,24,.74);
       padding:6px 10px;
       border-radius:999px;
-      border:1px solid rgba(17,19,24,.10);
-      background:rgba(246,247,251,.9);
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(246,247,251,.92);
+      color: rgba(16,19,24,.74);
       white-space:nowrap;
+      font-weight:800;
     }
+    .chip.c1{ border-color: rgba(39,183,255,.40); background: rgba(39,183,255,.10); }
+    .chip.c2{ border-color: rgba(255,42,166,.38); background: rgba(255,42,166,.08); }
+    .chip.c3{ border-color: rgba(255,210,61,.55); background: rgba(255,210,61,.16); }
 
     .cardFooter{
       padding:14px;
-      border-top:1px solid rgba(17,19,24,.08);
+      border-top:1px solid rgba(16,19,24,.08);
       display:flex;
       gap:10px;
     }
@@ -511,68 +490,57 @@
       flex:1;
       padding:11px 12px;
       border-radius: 14px;
-      border:1px solid rgba(17,19,24,.10);
-      background: rgba(255,255,255,.95);
-      box-shadow: var(--shadow2);
-      font-weight:900;
-      font-size:13.5px;
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(255,255,255,.94);
+      font-weight:1100;
       cursor:pointer;
+      box-shadow: var(--shadow2);
       transition:.18s ease;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
     }
     .btnSmall:hover{ transform: translateY(-1px); }
     .btnSmallPrimary{
       border:none;
-      background: linear-gradient(90deg, rgba(43,184,255,.95), rgba(255,45,166,.88), rgba(255,208,66,.92));
+      background: linear-gradient(90deg, rgba(39,183,255,.96), rgba(255,42,166,.88), rgba(255,210,61,.92));
+      color:#0d1117;
     }
 
     /* Steps */
-    .steps{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:14px;
-    }
+    .steps{ display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; }
     .step{
       border-radius: var(--radius);
-      border:1px solid rgba(17,19,24,.10);
-      background: rgba(255,255,255,.92);
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(255,255,255,.94);
       box-shadow: var(--shadow2);
       padding:16px;
       display:flex;
       gap:12px;
       align-items:flex-start;
     }
-    .stepNum{
-      width:40px;height:40px;
-      border-radius:16px;
-      border:1px solid rgba(17,19,24,.10);
-      background: rgba(246,247,251,.9);
-      display:grid;
-      place-items:center;
-      font-weight:1000;
-      position:relative;
-      overflow:hidden;
+    .num{
+      width:40px;height:40px;border-radius:16px;
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(246,247,251,.92);
+      display:grid; place-items:center;
+      font-weight:1100;
+      position:relative; overflow:hidden;
       flex:0 0 auto;
     }
-    .stepNum:before{
+    .num:before{
       content:"";
       position:absolute;
-      inset:-50%;
-      background: linear-gradient(90deg, rgba(43,184,255,.18), rgba(255,45,166,.14), rgba(255,208,66,.16));
+      inset:-55%;
+      background: linear-gradient(90deg, rgba(39,183,255,.18), rgba(255,42,166,.14), rgba(255,210,61,.16));
       transform: rotate(22deg);
     }
-    .stepNum span{ position:relative; z-index:1; }
+    .num span{ position:relative; z-index:1; }
     .step b{ display:block; font-size:14px; margin-bottom:3px; }
-    .step p{ margin:0; font-size:13.3px; color:rgba(17,19,24,.72); line-height:1.35; }
+    .step p{ margin:0; font-size:13.3px; color: rgba(16,19,24,.72); line-height:1.35; }
 
-    /* Contact card */
+    /* Contact */
     .contactCard{
-      border-radius: calc(var(--radius) + 6px);
-      border:1px solid rgba(17,19,24,.10);
-      background: rgba(255,255,255,.92);
+      border-radius: calc(var(--radius) + 10px);
+      border:1px solid rgba(16,19,24,.10);
+      background: rgba(255,255,255,.94);
       box-shadow: var(--shadow);
       padding:18px;
       display:flex;
@@ -582,14 +550,14 @@
       flex-wrap:wrap;
     }
     .contactCard h3{ margin:0; font-size:18px; letter-spacing:-.2px; }
-    .contactCard p{ margin:6px 0 0; color:rgba(17,19,24,.72); font-size:13.5px; line-height:1.35; }
+    .contactCard p{ margin:6px 0 0; font-size:13.5px; color: rgba(16,19,24,.72); line-height:1.35; }
 
     /* Footer */
     footer{
       margin-top: 8px;
-      border-top:1px solid rgba(17,19,24,.10);
-      background: rgba(246,247,251,.72);
-      padding: 18px 0 120px; /* IMPORTANTE: deja espacio para que el botón flotante no tape el footer */
+      border-top:1px solid rgba(16,19,24,.10);
+      background: rgba(246,247,251,.78);
+      padding: 18px 0 120px; /* espacio para botón flotante */
     }
     .footerGrid{
       display:flex;
@@ -598,12 +566,8 @@
       gap:14px;
       flex-wrap:wrap;
     }
-    .fine{
-      font-size:12.5px;
-      color:rgba(17,19,24,.70);
-      line-height:1.35;
-    }
-    .fine a{ text-decoration:underline; text-underline-offset:3px; }
+    .fine{ font-size:12.5px; color: rgba(16,19,24,.70); line-height:1.35; }
+    .fine a{ text-decoration:underline; text-underline-offset:3px; font-weight:900; }
 
     /* Floating WhatsApp */
     .waFloat{
@@ -618,19 +582,14 @@
       border-radius:999px;
       border:none;
       cursor:pointer;
-      font-weight:1000;
-      color:#0c1016;
-      background:
-        linear-gradient(90deg, rgba(43,184,255,.95), rgba(255,45,166,.88), rgba(255,208,66,.92));
-      box-shadow: 0 18px 36px rgba(17,19,24,.18);
+      font-weight:1100;
+      color:#0d1117;
+      background: linear-gradient(90deg, rgba(39,183,255,.96), rgba(255,42,166,.88), rgba(255,210,61,.92));
+      box-shadow: 0 18px 36px rgba(16,19,24,.18);
       transition:.18s ease;
       user-select:none;
     }
     .waFloat:hover{ transform: translateY(-2px); }
-    .waFloat svg{
-      width:18px;height:18px;
-      stroke:#0c1016;
-    }
 
     /* Responsive */
     @media (max-width: 980px){
@@ -641,19 +600,16 @@
     }
     @media (max-width: 560px){
       .card{ grid-column: span 12; }
-      .brandText b{ font-size:13.5px; }
+      .brandText b{ font-size:13.8px; }
       .brandText span{ font-size:12px; }
+      .heroCover{ height: 230px; }
       .waFloat{ right:12px; bottom:12px; padding:12px 13px; }
-      .sub{ font-size:15px; }
-      .heroCard, .heroAside{ padding:16px; }
-      .thumb{ height: 155px; }
     }
   </style>
 </head>
 
 <body>
-  <!-- CONFIG DEMO (reemplazar por el número oficial real) -->
-  <!-- WHATSAPP_NUMBER formato: 549 + código + número (sin +, sin espacios). Ej: 5491133344455 -->
+  <!-- CONFIG: cambiá el número por el WhatsApp oficial real (formato: 549 + código + número, sin + ni espacios) -->
   <script>
     const CONFIG = {
       WHATSAPP_NUMBER: "54911XXXXXXXXXX",
@@ -665,36 +621,41 @@
       const text = encodeURIComponent(message);
       return `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${text}`;
     }
-
     function waOpen(message){
       window.open(waLink(message), "_blank", "noopener,noreferrer");
     }
   </script>
 
+  <div class="topStrip">
+    <div class="wrap">
+      <div>Venta virtual • Envíos a todo el país • Hecho artesanal</div>
+      <div class="miniLinks">
+        <a href="https://www.instagram.com/elmundoatufavor/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="#catalogo">Ver catálogo</a>
+      </div>
+    </div>
+  </div>
+
   <header>
     <div class="wrap">
       <div class="topbar">
         <div class="brand">
-          <div class="logoBadge" aria-hidden="true"></div>
+          <div class="logoBox" aria-hidden="true"></div>
           <div class="brandText">
             <b>El Mundo a Tu Favor®</b>
-            <span>Artesanías mágicas • venta virtual</span>
+            <span>Duendes • Hadas • Sahumerios • Deco</span>
           </div>
         </div>
 
-        <nav aria-label="Navegación principal">
+        <nav aria-label="Navegación">
           <a class="navLink" href="#catalogo">Catálogo</a>
           <a class="navLink" href="#como">Cómo comprar</a>
           <a class="navLink" href="#envios">Envíos</a>
           <a class="navLink" href="#contacto">Contacto</a>
 
-          <a class="pill" href="#catalogo" title="Ver catálogo">
-            <span class="dot" aria-hidden="true"></span>
-            Ver catálogo
-          </a>
+          <a class="pill" href="#catalogo"><span class="dot" aria-hidden="true"></span>Ver catálogo</a>
 
-          <a class="iconBtn" href="https://www.instagram.com/elmundoatufavor/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @elmundoatufavor">
-            <!-- Instagram icon -->
+          <a class="iconBtn" href="https://www.instagram.com/elmundoatufavor/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <rect x="7" y="7" width="10" height="10" rx="3"></rect>
               <path d="M16.5 7.5h.01"></path>
@@ -702,8 +663,7 @@
             </svg>
           </a>
 
-          <button class="iconBtn" type="button" aria-label="WhatsApp (consultar)" onclick="waOpen('Hola! 👋 Vi sus artesanías y quería hacer una consulta 😊')">
-            <!-- WhatsApp (simple bubble) -->
+          <button class="iconBtn" type="button" aria-label="WhatsApp" onclick="waOpen('Hola! Vi sus artesanías y quería hacer una consulta 😊')">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M21 12a8.5 8.5 0 0 1-12.8 7.3L3 20l.7-5.2A8.5 8.5 0 1 1 21 12z"></path>
               <path d="M9.5 10.3c.2 2.2 2.1 4.1 4.3 4.3"></path>
@@ -718,6 +678,346 @@
     <div class="wrap">
       <section class="hero" id="inicio">
         <div class="heroGrid">
-          <div class="heroCard">
-            <div class="kicker">
-              <span class="spark" a
+
+          <div class="heroMain">
+            <div class="heroCover" aria-hidden="true"></div>
+            <div class="heroContent">
+              <div class="kicker"><span class="spark" aria-hidden="true"></span>Hecho en familia • con intención</div>
+              <h1>Duendes, hadas y sahumerios artesanales</h1>
+              <p class="sub">
+                Una vidriera clara para vender mejor: fotos, medidas y detalles. Consultás por WhatsApp y coordinamos.
+                Envíos a todo el país.
+              </p>
+
+              <div class="ctaRow">
+                <button class="btn btnPrimary" type="button" onclick="waOpen('Hola! 👋 Vi sus artesanías en la web y quería consultar 😊')">Consultar por WhatsApp</button>
+                <a class="btn" href="#catalogo">Ver catálogo</a>
+              </div>
+
+              <div class="miniNote">
+                Para ver más trabajos reales: <a href="https://www.instagram.com/elmundoatufavor/" target="_blank" rel="noopener noreferrer">seguinos en <b>@elmundoatufavor</b></a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="heroSide" aria-label="Galería y confianza">
+            <p class="sideTitle">Vista rápida</p>
+
+            <div class="mosaic">
+              <div class="big" title="Artesanías (demo)"></div>
+              <div class="smallCol">
+                <div class="small s1" title="Sahumerios (demo)"></div>
+                <div class="small s2" title="Deco (demo)"></div>
+              </div>
+            </div>
+
+            <ul class="trust">
+              <li class="trustItem">
+                <div class="badge" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M12 22s8-4.5 8-12V6l-8-3-8 3v4c0 7.5 8 12 8 12z"></path>
+                    <path d="M9.5 12l1.8 2 3.8-4.2"></path>
+                  </svg>
+                </div>
+                <div>
+                  <b>Confianza real</b>
+                  <span>Catálogo prolijo + Instagram visible para validar el emprendimiento.</span>
+                </div>
+              </li>
+
+              <li class="trustItem">
+                <div class="badge" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M4 7h16"></path>
+                    <path d="M6 7l1 14h10l1-14"></path>
+                    <path d="M9 7V5a3 3 0 0 1 6 0v2"></path>
+                  </svg>
+                </div>
+                <div>
+                  <b>Todo ordenado</b>
+                  <span>Secciones por categorías: duendes/hadas, sahumerios y deco.</span>
+                </div>
+              </li>
+
+              <li class="trustItem">
+                <div class="badge" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M21 12a8.5 8.5 0 0 1-12.8 7.3L3 20l.7-5.2A8.5 8.5 0 1 1 21 12z"></path>
+                    <path d="M9.5 10.3c.2 2.2 2.1 4.1 4.3 4.3"></path>
+                  </svg>
+                </div>
+                <div>
+                  <b>WhatsApp vende</b>
+                  <span>Botones listos con mensaje armado para convertir consultas.</span>
+                </div>
+              </li>
+            </ul>
+          </aside>
+
+        </div>
+      </section>
+
+      <section id="catalogo">
+        <div class="sectionHead">
+          <div>
+            <h2>Catálogo (ejemplo con fotos)</h2>
+            <p>Esto ya “se ve” como tienda real. Después se reemplaza por fotos reales del stock y se agregan más productos.</p>
+          </div>
+          <a class="pill" href="#contacto"><span class="dot" aria-hidden="true"></span>Contactar</a>
+        </div>
+
+        <div class="grid" aria-label="Productos">
+          <!-- Duende -->
+          <article class="card">
+            <div class="thumbImg">
+              <img src="https://images.unsplash.com/photo-1563298723-dcfebaa392e3?auto=format&fit=crop&w=1200&q=70" alt="Duende artesanal (imagen demo)" />
+            </div>
+            <div class="cardTop">
+              <span class="tag">Duendes & Hadas</span>
+              <span class="flag">Consultar</span>
+            </div>
+            <div class="cardBody">
+              <h3>Duende “Bosque”</h3>
+              <p class="desc">Artesanía hecha a mano. Ideal para deco, regalar o sumar a un rincón especial.</p>
+              <div class="meta">
+                <span class="chip c1">18–20 cm</span>
+                <span class="chip c2">Color a elección</span>
+                <span class="chip c3">Hecho a mano</span>
+              </div>
+            </div>
+            <div class="cardFooter">
+              <button class="btnSmall btnSmallPrimary" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por: Duende “Bosque” (18–20 cm). ¿Me pasás disponibilidad y colores?')">Consultar por WhatsApp</button>
+            </div>
+          </article>
+
+          <!-- Hada -->
+          <article class="card">
+            <div class="thumbImg">
+              <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=70" alt="Hada artesanal (imagen demo)" />
+            </div>
+            <div class="cardTop">
+              <span class="tag">Duendes & Hadas</span>
+              <span class="flag">Consultar</span>
+            </div>
+            <div class="cardBody">
+              <h3>Hada “Luz”</h3>
+              <p class="desc">Pieza decorativa con detalles finos. Se puede personalizar en tonos suaves o vivos.</p>
+              <div class="meta">
+                <span class="chip c1">16–18 cm</span>
+                <span class="chip c2">Personalizable</span>
+                <span class="chip c3">Regalo</span>
+              </div>
+            </div>
+            <div class="cardFooter">
+              <button class="btnSmall btnSmallPrimary" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por: Hada “Luz” (16–18 cm). ¿Qué opciones de colores hay?')">Consultar por WhatsApp</button>
+            </div>
+          </article>
+
+          <!-- Sahumerios -->
+          <article class="card">
+            <div class="thumbImg">
+              <img src="https://images.unsplash.com/photo-1542556398-95fb5b9f8a50?auto=format&fit=crop&w=1200&q=70" alt="Sahumerios (imagen demo)" />
+            </div>
+            <div class="cardTop">
+              <span class="tag">Sahumerios</span>
+              <span class="flag">Aromas</span>
+            </div>
+            <div class="cardBody">
+              <h3>Sahumerios artesanales</h3>
+              <p class="desc">Aromas con intención para armonizar espacios. Ideal para regalar o usar en casa.</p>
+              <div class="meta">
+                <span class="chip c2">Limpieza</span>
+                <span class="chip c3">Canela</span>
+                <span class="chip c1">Yagra</span>
+                <span class="chip c2">Incienso</span>
+                <span class="chip c3">Romero</span>
+                <span class="chip c1">Armonía</span>
+              </div>
+            </div>
+            <div class="cardFooter">
+              <button class="btnSmall btnSmallPrimary" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por Sahumerios artesanales. ¿Qué aromas tenés disponibles y cuánto sale el envío?')">Consultar por WhatsApp</button>
+            </div>
+          </article>
+
+          <!-- Mix -->
+          <article class="card">
+            <div class="thumbImg">
+              <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1200&q=70" alt="Mix aromático (imagen demo)" />
+            </div>
+            <div class="cardTop">
+              <span class="tag">Sahumerios</span>
+              <span class="flag">Consultar</span>
+            </div>
+            <div class="cardBody">
+              <h3>Mix “Armonía”</h3>
+              <p class="desc">Combo de aromas para elegir. Ideal si querés variedad en una sola compra.</p>
+              <div class="meta">
+                <span class="chip c1">Elegís aromas</span>
+                <span class="chip c2">Combos</span>
+                <span class="chip c3">Regalo</span>
+              </div>
+            </div>
+            <div class="cardFooter">
+              <button class="btnSmall btnSmallPrimary" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por Mix “Armonía”. ¿Qué combos tenés y cuántos aromas incluye?')">Consultar por WhatsApp</button>
+            </div>
+          </article>
+
+          <!-- Deco -->
+          <article class="card">
+            <div class="thumbImg">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=70" alt="Deco (imagen demo)" />
+            </div>
+            <div class="cardTop">
+              <span class="tag">Utilitarios / Deco</span>
+              <span class="flag">Consultar</span>
+            </div>
+            <div class="cardBody">
+              <h3>Mini deco personalizada</h3>
+              <p class="desc">Detalles para decorar o regalar. Se personaliza con colores y temática.</p>
+              <div class="meta">
+                <span class="chip c2">Personalización</span>
+                <span class="chip c1">Hecho a mano</span>
+                <span class="chip c3">Envíos</span>
+              </div>
+            </div>
+            <div class="cardFooter">
+              <button class="btnSmall btnSmallPrimary" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por Mini deco personalizada. ¿Qué opciones de colores/temáticas hacés?')">Consultar por WhatsApp</button>
+            </div>
+          </article>
+
+          <!-- Otro -->
+          <article class="card">
+            <div class="thumbImg">
+              <img src="https://images.unsplash.com/photo-1519710887722-0d56f2e3f12b?auto=format&fit=crop&w=1200&q=70" alt="Artesanías (imagen demo)" />
+            </div>
+            <div class="cardTop">
+              <span class="tag">Duendes & Hadas</span>
+              <span class="flag">Consultar</span>
+            </div>
+            <div class="cardBody">
+              <h3>Duende “Protector”</h3>
+              <p class="desc">Pieza decorativa artesanal. Ideal para regalar o sumar a tu rincón mágico.</p>
+              <div class="meta">
+                <span class="chip c1">20–22 cm</span>
+                <span class="chip c2">A pedido</span>
+                <span class="chip c3">Hecho en familia</span>
+              </div>
+            </div>
+            <div class="cardFooter">
+              <button class="btnSmall btnSmallPrimary" type="button" onclick="waOpen('Hola! 😊 Quiero consultar por Duende “Protector” (20–22 cm). ¿Tenés stock o se hace a pedido?')">Consultar por WhatsApp</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="como">
+        <div class="sectionHead">
+          <div>
+            <h2>Cómo comprar</h2>
+            <p>Simple: elegís, consultás por WhatsApp y coordinamos el envío.</p>
+          </div>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="num"><span>1</span></div>
+            <div><b>Elegís</b><p>Mirás el catálogo con fotos, medidas y detalles.</p></div>
+          </div>
+          <div class="step">
+            <div class="num"><span>2</span></div>
+            <div><b>Consultás</b><p>WhatsApp con mensaje listo según el producto.</p></div>
+          </div>
+          <div class="step">
+            <div class="num"><span>3</span></div>
+            <div><b>Enviamos</b><p>Venta virtual y envíos a todo el país.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="envios">
+        <div class="sectionHead">
+          <div>
+            <h2>Envíos a todo el país</h2>
+            <p>Se coordina por WhatsApp: destino, costo y seguimiento.</p>
+          </div>
+        </div>
+
+        <div class="contactCard">
+          <div>
+            <h3>¿Te armamos el pedido?</h3>
+            <p>Decinos qué producto te gustó y tu localidad, y te pasamos disponibilidad y envío.</p>
+          </div>
+          <div class="ctaRow">
+            <button class="btn btnPrimary" type="button" onclick="waOpen('Hola! 👋 Quería consultar por envíos. Mi localidad es: _____. Me interesa: _____.')">Consultar envío por WhatsApp</button>
+            <a class="btn" href="https://www.instagram.com/elmundoatufavor/" target="_blank" rel="noopener noreferrer">Ver Instagram @elmundoatufavor</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <div class="sectionHead">
+          <div>
+            <h2>Contacto</h2>
+            <p>WhatsApp para comprar. Instagram para ver más trabajos y novedades.</p>
+          </div>
+        </div>
+
+        <div class="contactCard">
+          <div>
+            <h3>El Mundo a Tu Favor®</h3>
+            <p>
+              <b>Instagram:</b> <a href="https://www.instagram.com/elmundoatufavor/" target="_blank" rel="noopener noreferrer">@elmundoatufavor</a><br/>
+              <b>Canal principal:</b> WhatsApp (consultas y ventas)<br/>
+              <b>Envíos:</b> a todo el país
+            </p>
+          </div>
+          <div class="ctaRow">
+            <button class="btn btnPrimary" type="button" onclick="waOpen('Hola! 👋 Vi sus artesanías y quería hacer una consulta 😊')">Escribir por WhatsApp</button>
+            <a class="btn" href="https://www.instagram.com/elmundoatufavor/" target="_blank" rel="noopener noreferrer">Ir a Instagram</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footerGrid">
+        <div class="fine">
+          <b>El Mundo a Tu Favor®</b><br/>
+          Artesanías hechas a mano • Venta virtual • Envíos a todo el país
+        </div>
+
+        <div class="fine">
+          <b>Links</b><br/>
+          <a href="https://www.instagram.com/elmundoatufavor/" target="_blank" rel="noopener noreferrer">Instagram @elmundoatufavor</a><br/>
+          <a href="#catalogo">Catálogo</a> • <a href="#como">Cómo comprar</a> • <a href="#envios">Envíos</a>
+        </div>
+
+        <div class="fine">
+          <b>Desarrollo</b><br/>
+          <a href="https://ciborg347.onrender.com" target="_blank" rel="noopener noreferrer">Creado y diseñado por Ciborg 347</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="waFloat" type="button" onclick="waOpen('Hola! 👋 Vi sus artesanías en la web y quería consultar 😊')">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M21 12a8.5 8.5 0 0 1-12.8 7.3L3 20l.7-5.2A8.5 8.5 0 1 1 21 12z"></path>
+      <path d="M9.5 10.3c.2 2.2 2.1 4.1 4.3 4.3"></path>
+    </svg>
+    WhatsApp
+  </button>
+
+  <script>
+    (function(){
+      const n = (CONFIG.WHATSAPP_NUMBER || "").trim();
+      const looksPlaceholder = n.includes("X") || n.length < 10;
+      if(looksPlaceholder){
+        console.warn("CONFIG: Reemplazá WHATSAPP_NUMBER por el número real para que el link funcione.");
+      }
+    })();
+  </script>
+</body>
+</html>
